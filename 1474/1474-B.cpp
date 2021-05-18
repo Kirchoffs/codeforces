@@ -4,7 +4,7 @@ using namespace std;
 void solve() {
     int d;
     cin >> d;
-    int p = d + 1;
+    int p = 1 + d;
     for (; ; p++) {
         bool is_found = true;
         for (int j = 2; j * j <= p; j++) {
