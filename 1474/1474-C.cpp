@@ -51,6 +51,12 @@ void solve() {
     cout << "NO" << endl;
 }
 
+void swap(vector<int>& p, vector<int>& q) {
+    vector<int> tmp = p;
+    p = q;
+    q = tmp;
+}
+
 int main() {
     int t;
     cin >> t;
