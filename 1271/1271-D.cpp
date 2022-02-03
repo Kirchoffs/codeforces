@@ -18,17 +18,17 @@ int main() {
     cin >> n >> m >> k;
 
     vector<vector<int>> castles(n, vector<int>(3, 0));
+    // number of warriors required, number of warriors can be hired, importance
     for (int i = 0; i < n; i++) {
         cin >> castles[i][0] >> castles[i][1] >> castles[i][2];
     }
-
     
     vector<int> next_helper(n);
     for (int i = 0; i < n; i++) {
         next_helper[i] = i;
     }
     for (int i = 0; i < m; i++) {
-        int u, v;
+        int u, v; // u > v
         cin >> u >> v;
         u--;
         v--;
