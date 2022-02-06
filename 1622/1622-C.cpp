@@ -7,7 +7,7 @@ using ll = long long;
 
 ll floor_division(ll dividend, ll divisor) {
     ll res = dividend / divisor;
-    while (res * divisor > dividend) {
+    if (res * divisor > dividend) {
         res--;
     }
     return res;
