@@ -19,8 +19,6 @@ void solve() {
         res = max(res, (lanterns[i + 1] - lanterns[i]) / 2.0);
     }
     cout.precision(20);
-    // cout << fixed << res << endl;
-    cout << res << endl;
     cout << fixed << res << endl;
 }
 
