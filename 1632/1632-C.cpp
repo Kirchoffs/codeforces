@@ -13,7 +13,7 @@ using ll = long long;
 
 // Suppose a is increased to ta, and b is increated to tb
 // then the result should be (ta - a) + (tb - b) + (ta | tb - tb) + 1
-// which is ta + ta | tb + 1 - a - b
+// which is ta + (ta | tb) + (1 - a - b)
 void solve() {
     int a, b;
     cin >> a >> b;
