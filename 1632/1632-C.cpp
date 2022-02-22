@@ -14,6 +14,7 @@ using ll = long long;
 // Suppose a is increased to ta, and b is increated to tb
 // then the result should be (ta - a) + (tb - b) + (ta | tb - tb) + 1
 // which is ta + (ta | tb) + (1 - a - b)
+// notice that we can have at least (b - a) times, so we can just iterate ta from a to b
 void solve() {
     int a, b;
     cin >> a >> b;
@@ -43,3 +44,8 @@ int main() {
         solve();
     }
 }
+
+// a = a | b ---> b += (a | b - b)
+// is equivalent to
+// b += (a | b - b) ---> a = a | b
+// So we can always find an equivalent solution with a = a | b being the last step
