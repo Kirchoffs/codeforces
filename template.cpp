@@ -6,8 +6,8 @@ using namespace std;
 using ll = long long;
 
 void solve() {
-    int m, n;
-    cin >> m >> n;
+    int n, k;
+    cin >> n >> k;
 }
 
 int main() {
